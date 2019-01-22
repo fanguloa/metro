@@ -69,6 +69,11 @@ public class Estaciones extends javax.swing.JInternalFrame {
         jLabel2.setText("ID");
 
         txtIdEstaciones.setEditable(false);
+        txtIdEstaciones.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtIdEstacionesActionPerformed(evt);
+            }
+        });
 
         jLabel3.setText("NOMBRE");
 
@@ -355,6 +360,10 @@ public class Estaciones extends javax.swing.JInternalFrame {
         String color = String.valueOf(tm.getValueAt(fila, 7));
         cmbLinea.setSelectedItem(compararObjeto(color));
     }//GEN-LAST:event_tblEstacionesMouseClicked
+
+    private void txtIdEstacionesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtIdEstacionesActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtIdEstacionesActionPerformed
 
     public void limpiarTabla(){
         tm = (DefaultTableModel) tblEstaciones.getModel();
